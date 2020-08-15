@@ -1,0 +1,21 @@
+None
+read
+name
+endofProtCode
+Player
+Check
+eval
+name
+endofProtCode
+Player
+Check
+exec
+globals()["nameDRM"] = name
+endofProtCode
+n.a.
+DontCheck
+read
+nameDRM
+endofProtCode
+Player
+Check
