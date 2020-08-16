@@ -7,10 +7,10 @@ Idea is that file can only be loaded while playing the game. So you can’t just
 
 The steps for loading an image.
 
-renpy --<name of File>--> coapp #The Challenge can only be accessed if the name is known else it cannot be decrypted<br/>
-renpy <----<Challenge>--- coapp #Example get enemyName (should not be guessable by a generic dumper)<br/>
-renpy ----<response>----> coapp #The response is used as a key for the image. The image can only be decrypted if the response is correct<br/>
-renpy <-----<image>------ coapp #The image
+renpy --name of File--> coapp #The Challenge can only be accessed if the name is known else it cannot be decrypted<br/>
+renpy <----Challenge--- coapp #Example get enemyName (should not be guessable by a generic dumper)<br/>
+renpy ----response----> coapp #The response is used as a key for the image. The image can only be decrypted if the response is correct<br/>
+renpy <-----image------ coapp #The image
 
 Usage:
 
@@ -21,9 +21,9 @@ Setting up CoApp
 4. Compile the CoApp using your preferred compiler for example tcc Ccompiler\tcc.exe srcFinal\test.c srcFinal\aes.c srcFinal\baseDec.c srcFinal\sha256.c
 
 Setup renpy
-5. Copy test.exe and 000.dat to the folder where the starter Executable is located
-6. Put Protecter.rpy into the game folder #if you can you can obfuscate and/or change this Code a little bit also change the coapp if you change keys (dont forget to recompile)
-7. Make sure that in you release package you remove the Files and only load them through 000.dat and the CoApp
+5. Copy test.exe and 000.dat to the folder where the starter Executable is located<br/>
+6. Put Protecter.rpy into the game folder #if you can you can obfuscate and/or change this Code a little bit also change the coapp if you change keys (dont forget to recompile)<br/>
+7. Make sure that in you release package you remove the Files and only load them through 000.dat and the CoApp<br/>
 8. Test your Program again as you can't iterate trough Files anymore that causes some functions to break.
 
 
@@ -76,24 +76,24 @@ This is followed by Check or DontCheck that says if the response should be used 
 Example (This checks if the name is Player than copies the name to nameDRM and then if nameDRM is Player):
 
 
-None
-read
-name
-endofProtCode
-Player
-Check
-eval
-name
-endofProtCode
-Player
-Check
-exec
-globals()["nameDRM"] = name
-endofProtCode
-n.a.
-DontCheck
-read
-nameDRM
-endofProtCode
-Player
+None<br/>
+read<br/>
+name<br/>
+endofProtCode<br/>
+Player<br/>
+Check<br/>
+eval<br/>
+name<br/>
+endofProtCode<br/>
+Player<br/>
+Check<br/>
+exec<br/>
+globals()["nameDRM"] = name<br/>
+endofProtCode<br/>
+n.a.<br/>
+DontCheck<br/>
+read<br/>
+nameDRM<br/>
+endofProtCode<br/>
+Player<br/>
 Check
