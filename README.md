@@ -20,7 +20,7 @@ Setting up CoApp
 3. Copy the generated File genData.hpp to srcFinal
 4. Compile the CoApp using your preferred compiler for example tcc Ccompiler\tcc.exe srcFinal\test.c srcFinal\aes.c srcFinal\baseDec.c srcFinal\sha256.c
 
-Setup renpy
+Setup renpy<br/>
 5. Copy test.exe and 000.dat to the folder where the starter Executable is located<br/>
 6. Put Protecter.rpy into the game folder #if you can you can obfuscate and/or change this Code a little bit also change the coapp if you change keys (dont forget to recompile)<br/>
 7. Make sure that in you release package you remove the Files and only load them through 000.dat and the CoApp<br/>
